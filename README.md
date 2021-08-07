@@ -46,7 +46,7 @@ I have a live version of the web app up on my [personal portfolio](http://alanva
 
 1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 ```
-git clone https://github.com/waterrmalann/telegram-fancy-fonts-bot.git
+git clone https://github.com/waterrmalann/fancy-fonts-generator.git
 ```
 2. Install the dependencies. (not required yet)
 ```
