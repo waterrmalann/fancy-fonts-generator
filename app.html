@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fancy Fonts Generator</title>
+		<link rel="stylesheet" href="css/main.css">
+		<meta name="theme-color" content="#30d5c8">
+	</head>
+	
+	<body>
+		<div class="main-container">
+			<div class="container text-align-center sans-serif">
+				<h1 aria-label="Fancy Fonts Bot">𝕱𝖆𝖓𝖈𝖞 𝕱𝖔𝖓𝖙𝖘 𝕲𝖊𝖓𝖊𝖗𝖆𝖙𝖔𝖗</h1>
+				<p>A cool little web app that lets you convert regular text into weird (and cool) unicode pseudofonts.</p>
+				
+				<p class="warning-label">⚠ <b>Note:</b> Not all devices render unicode properly. People with visual disabilities could also have trouble reading the text as screen-readers may not work.</p>
+			
+				<textarea id="input-text-area" rows="4" cols="60" disabled placeholder="Type something!"></textarea><br>
+				
+				<div class="flex-container">
+					<label class="text-align-center">Select Pseudofont
+						<select id="font-select" name="fontlist" title="Font Selection">
+							<option value="Select Font" selected disabled>Select Font</option>
+						</select>
+					</label>
+					<br>
+					
+					<label class="text-align-center">Select Text Style
+						<select id="font-style-select" id="font-styles-list" name="font-styles" title="Style Selection">
+							<option value="Select Style" disabled>Select Font Style</option>
+							<option value="shift-normal" selected>None</option>
+							<option value="shift-upper">Uppercase</option>
+							<option value="shift-lower">Lowercase</option>
+							<option value="shift-alternate">Alternate Case</option>
+							<option value="spaced">Spaced</option>
+						</select>
+					</label>
+				</div>
+			</div>
+			
+			<div class="container text-align-center text-size-large">
+				<p title="Click to copy" id="output-text" class="break-all"></p>
+			</div>
+			
+			<div class="container">
+				<details>
+					<summary id="view-all-conversions">View All Fonts</summary>
+					<ul id="output-list" class="break-all">
+					</ul>
+				</details>
+			</div>
+			<div class="container container--thin">
+				<p class="text-size-small sans-serif text-align-center">click on the main generated text to copy</p>
+				<p class="text-align-center sans-serif">Crafted with ❤ by <a href="http://alanvarghese.me">Alan</a> | 🔓 Open-Source on <a title="Leave a star!" href="https://github.com/waterrmalann/fancy-fonts-generator">Github</a></p>
+			</div>
+		</div>
+
+		<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+        <script defer>document.body.innerHTML = twemoji.parse(document.body.innerHTML);</script>
+		<script defer src="js/converter.js"></script>
+	</body>
+</html>

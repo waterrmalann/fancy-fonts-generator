@@ -1,0 +1,11 @@
+{
+  "name": "fancy-fonts-generator",
+  "version": "1.0.0",
+  "description": "A simple web app that can convert user input into unicode pseudofonts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan",
+  "license": "MIT"
+}

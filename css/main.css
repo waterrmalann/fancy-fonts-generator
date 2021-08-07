@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	scroll-behavior: smooth;
+	background-color: #30D5C8;
+	/*line-height: 1.6;*/
+	width: min(88%, 80.5rem);
+	margin-inline: auto;
+}
+
+a, a:hover, a:active, a:visited {
+	text-decoration:none;
+}
+
+hr {
+	width:50%;opacity:0.2;
+}
+
+textarea {
+	width: 90%;
+	border-radius: 0.5rem;
+	resize: none;
+	background-color: transparent;
+	padding: 0.5rem 0.5rem;
+	font-family: sans-serif;
+}
+
+h1, h4 {
+	margin: 0;
+}
+
+select {
+	margin-top: 0.75rem;
+	padding: 0.25rem;
+	width: 80%;
+}
+
+.main-container {
+	margin-top: 1.25rem;
+	background-color: white;
+	border-radius: 1rem;
+	padding-block: 0.75rem;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.container {
+	padding: 1.7rem 0;
+	width: min(90%, 70.5rem);
+	margin-inline: auto;
+}
+
+.container--thin {
+	padding: 0;
+}
+
+.warning-label {
+	background-color: hsl(0, 0%, 98%);
+	border-left:0.35rem solid gray;
+	padding:0.45rem;
+	border-radius: 0.5rem;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+img.emoji {
+	height: 1.1em;
+	width: 1.1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}
+
+.sans-serif {
+	font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.break-all {
+	word-break: break-all;
+}
+
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.text-size-small {
+	font-size:0.75rem;
+}
+
+.text-size-large {
+	font-size: 2rem;
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:1rem;
+}
+
+@media (max-width: 700px) {
+	.flex-container {
+		flex-direction: column;
+		gap: 0rem;
+	}
+}
