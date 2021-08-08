@@ -14,26 +14,25 @@
 				<h1 aria-label="Fancy Fonts Bot">𝕱𝖆𝖓𝖈𝖞 𝕱𝖔𝖓𝖙𝖘 𝕲𝖊𝖓𝖊𝖗𝖆𝖙𝖔𝖗</h1>
 				<p>A cool little web app that lets you convert regular text into weird (and cool) unicode pseudofonts.</p>
 				
-				<p class="warning-label">⚠ <b>Note:</b> Not all devices render unicode properly. People with visual disabilities could also have trouble reading the text as screen-readers may not work.</p>
+				<p id="accessibility-warning">⚠ <b>Note:</b> Not all devices render unicode properly. People with visual disabilities could also have trouble reading the text as screen-readers may not work.</p>
 			
 				<textarea id="input-text-area" rows="4" cols="60" disabled placeholder="Type something!"></textarea><br>
 				
 				<div class="flex-container">
 					<label class="text-align-center">Select Pseudofont
 						<select id="font-select" name="fontlist" title="Font Selection">
-							<option value="Select Font" selected disabled>Select Font</option>
 						</select>
 					</label>
 					<br>
 					
 					<label class="text-align-center">Select Text Style
 						<select id="font-style-select" id="font-styles-list" name="font-styles" title="Style Selection">
-							<option value="Select Style" disabled>Select Font Style</option>
 							<option value="shift-normal" selected>None</option>
 							<option value="shift-upper">Uppercase</option>
 							<option value="shift-lower">Lowercase</option>
 							<option value="shift-alternate">Alternate Case</option>
 							<option value="spaced">Spaced</option>
+							<option value="reverse">Reversed</option>
 						</select>
 					</label>
 				</div>

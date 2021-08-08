@@ -55,7 +55,7 @@ select {
 	padding: 0;
 }
 
-.warning-label {
+#accessibility-warning {
 	background-color: hsl(0, 0%, 98%);
 	border-left:0.35rem solid gray;
 	padding:0.45rem;
