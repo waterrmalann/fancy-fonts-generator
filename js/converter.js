@@ -116,9 +116,9 @@ fetch("fonts.json")
 		// make a new pseudofont object.
 		let _newFont = new PseudoFont(
 			_font['fontName'],
-			_font['fontLower'],
-			_font['fontUpper'],
-			_font['fontLower']
+			_font['fontLower'] || 'abcdefghijklmnopqrstuvwxyz',
+			_font['fontUpper'] || 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+			_font['fontDigits'] || '0123456789'
 		);
 		
 		// add the font to the font list.
