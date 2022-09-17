@@ -35,12 +35,7 @@ A super-simple web app that you can use to generate cool, weird, and beautiful t
 
 ### Live Version
 
-I have a live version of the web app up on my [personal portfolio](http://alanvarghese.me/projects/fancy-fonts-generator/app.html). It is always on the exact same version as this git repository. If you however want to host your own version of the app, follow the steps down below to get started.
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/en/) (for the package manager)
-- Live Server (`npm install -g live-server`, run with `live-server`)
+A live version of the fonts generator is available [here](https://waterrmalann.github.io/fancy-fonts-generator). If you however want to host your own version of the app, follow the steps down below to get started.
 
 ### Hosting locally
 
@@ -48,13 +43,13 @@ I have a live version of the web app up on my [personal portfolio](http://alanva
 ```
 git clone https://github.com/waterrmalann/fancy-fonts-generator.git
 ```
-2. Install the dependencies. (not required yet)
+2. Install the dependencies.
 ```
 npm install
 ```
-3. Start a live server. Make sure you are in the app directory.
+3. This will start a live server. Head to the IP shown in the console.
 ```
-live-server
+npm run serve
 ```
 
 ### Adding new fonts
@@ -73,9 +68,9 @@ The fun stuff! Fonts are stored in a json file in the root directory with the na
 Leave an empty string for empty parameters. It will default to english letters and numbers.
 
 - **fontName**: The name of the font.
-- **fontUpper**: Uppercase letters of that font.
-- **fontLower**: Lowercase letters of that font.
-- **fontDigits**: Numbers of that font.
+- **fontUpper**: Uppercase letters of that font. (Can be a string or an array of length 26)
+- **fontLower**: Lowercase letters of that font. (Can be a string or an array of length 26)
+- **fontDigits**: Numbers of that font. (Can be a string or an array of length 10)
 
 Note: **fontLower** and **fontUpper** must always be 26 characters. **fontDigits** must always be 10 characters. The pseudofont class currently isn't failsafe. Foolproofing it is on my todo list.
 
