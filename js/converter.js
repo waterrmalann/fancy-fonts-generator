@@ -8,8 +8,7 @@
 
 /* String Extensions */
 String.prototype.unicodeAwareSplit = function() {
-	// it was a nightmare to figure out that javascript doesn't handle surrogate pairs properly
-	// im a python programmer :/
+	// javascript doesn't handle surrogate pairs properly so we have to get around it this way
 	let _arr = [];
 	for (const _c of this.valueOf()) {
 		_arr.push(_c);
@@ -37,10 +36,10 @@ class PseudoFont {
 	constructor(fontName, fontLower, fontUpper, fontDigits) {
 		this.fontName = fontName;
 		
-		// splitting because otherwise JavaScript won't handle the characters properly.
-		this.fontLower = fontLower.unicodeAwareSplit();
-		this.fontUpper = fontUpper.unicodeAwareSplit();
-		this.fontDigits = fontDigits.unicodeAwareSplit();
+		// splitting if not already an array, otherwise JavaScript won't handle the characters properly.
+		this.fontLower = Array.isArray(fontLower) ? fontLower : fontLower.unicodeAwareSplit();
+		this.fontUpper = Array.isArray(fontUpper) ? fontUpper : fontUpper.unicodeAwareSplit();
+		this.fontDigits = Array.isArray(fontDigits) ? fontDigits : fontDigits.unicodeAwareSplit();
 		
 		this.referenceLower = "abcdefghijklmnopqrstuvwxyz";
 		this.referenceUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

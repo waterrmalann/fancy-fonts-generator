@@ -4,8 +4,12 @@
   "description": "A simple web app that can convert user input into unicode pseudofonts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server --no-browser"
   },
   "author": "Alan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
