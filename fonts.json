@@ -292,5 +292,33 @@
         "fontLower": ["a͓̽","b͓̽","c͓̽","d͓̽","e͓̽","f͓̽","g͓̽","h͓̽","i͓̽","j͓̽","k͓̽","l͓̽","m͓̽","n͓̽","o͓̽","p͓̽","q͓̽","r͓̽","s͓̽","t͓̽","u͓̽","v͓̽","w͓̽","x͓̽","y͓̽","z͓̽"],
         "fontUpper": ["A͓̽","B͓̽","C͓̽","D͓̽","E͓̽","F͓̽","G͓̽","H͓̽","I͓̽","J͓̽","K͓̽","L͓̽","M͓̽","N͓̽","O͓̽","P͓̽","Q͓̽","R͓̽","S͓̽","T͓̽","U͓̽","V͓̽","W͓̽","X͓̽","Y͓̽","Z͓̽"],
         "fontDigits": ["0͓̽","1͓̽","2͓̽","3͓̽","4͓̽","5͓̽","6͓̽","7͓̽","8͓̽","9͓̽"]
+    },
+    {
+        "fontName": "Comic",
+        "fontLower": "ᗩᗷᑕᗪᗴᖴᘜᕼIᒍKᒪᗰᑎOᑭᑫᖇՏTᑌᐯᗯ᙭Yᘔ",
+        "fontUpper": "ᗩᗷᑕᗪᗴᖴᘜᕼIᒍKᒪᗰᑎOᑭᑫᖇՏTᑌᐯᗯ᙭Yᘔ",
+        "fontDigits": "",
+        "experimentalFont": true
+    },
+    {
+        "fontName": "Andalusia",
+        "fontLower": "ꪖ᥇ᥴᦔꫀᠻᧁꫝ𝓲𝓳𝘬ꪶꪑꪀꪮρ𝘲𝘳𝘴𝓽ꪊꪜ᭙᥊ꪗɀ",
+        "fontUpper": "ꪖ᥇ᥴᦔꫀᠻᧁꫝ𝓲𝓳𝘬ꪶꪑꪀꪮρ𝘲𝘳𝘴𝓽ꪊꪜ᭙᥊ꪗɀ",
+        "fontDigits": "",
+        "experimentalFont": true
+    },
+    {
+        "fontName": "Manga",
+        "fontLower": "卂乃匚ᗪ乇千ᘜ卄|ﾌҜㄥ爪几ㄖ卩Ҩ尺丂ㄒㄩᐯ山乂ㄚ乙",
+        "fontUpper": "卂乃匚ᗪ乇千ᘜ卄|ﾌҜㄥ爪几ㄖ卩Ҩ尺丂ㄒㄩᐯ山乂ㄚ乙",
+        "fontDigits": "",
+        "experimentalFont": true
+    },
+    {
+        "fontName": "Rune",
+        "fontLower": "ልጌርዕቿቻኗዘጎጋጕረጠክዐየዒዪነፕሁሀሠሸሃጊ",
+        "fontUpper": "ልጌርዕቿቻኗዘጎጋጕረጠክዐየዒዪነፕሁሀሠሸሃጊ",
+        "fontDigits:": "",
+        "experimentalFont": true
     }
 ]
