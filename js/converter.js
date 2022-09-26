@@ -44,6 +44,15 @@ class PseudoFont {
 		this.referenceLower = "abcdefghijklmnopqrstuvwxyz";
 		this.referenceUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		this.referenceDigits = "0123456789";
+
+		// experimental means either:
+		// 		- the font is incomplete.
+		//		- the font is unsupported on several platforms.
+		this.experimental = false;
+	}
+
+	setExperimental(state) {
+		this.experimental = state;
 	}
 	
 	convert(rawText) {
@@ -119,6 +128,10 @@ fetch("fonts.json")
 			_font['fontUpper'] || 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
 			_font['fontDigits'] || '0123456789'
 		);
+
+		if (_font['experimentalFont'] === true) {
+			_newFont.setExperimental(true);
+		}
 		
 		// add the font to the font list.
 		fonts.push(_newFont);
@@ -126,7 +139,11 @@ fetch("fonts.json")
 		// add the font to the fonts selection list.
 		let _newFontOption = document.createElement('option');
 		_newFontOption.value = _newFont.fontName;
-		_newFontOption.innerHTML = `${_newFont.fontName} (${_newFont.convert(_newFont.fontName)})`;
+		if (_newFont.experimental) {
+			_newFontOption.innerHTML = `${_newFont.fontName} [EXPERIMENTAL]`;
+		} else {
+			_newFontOption.innerHTML = `${_newFont.fontName} (${_newFont.convert(_newFont.fontName)})`;
+		}
 		e_fontSelect.appendChild(_newFontOption);
 	}
 	
@@ -134,7 +151,8 @@ fetch("fonts.json")
 	e_inputTextArea.disabled = false;
 	
 	// show how many fonts are loaded inside parenthesis
-	e_viewAllConversions.innerText = `View All Fonts (${fonts.length})`;
+	//e_viewAllConversions.innerText = `View All Fonts (${fonts.length})`;
+	e_viewAllConversions.innerText = `View All Fonts (${fonts.filter(x => !x.experimental).length})`;  // excluding experimental fonts
 	
 	// select a random font to show at start.
 	e_fontSelect.selectedIndex = Math.floor(Math.random() * fonts.length);
@@ -247,9 +265,11 @@ function convertTextAll() {
 		
 		// convert the text and display all available fonts.
 		for (const _font of fonts) {
-			let _li = document.createElement("li");
-			_li.innerHTML = `<p> <b class="unselectable">${_font.fontName}:</b> ${_font.convert(userInput)}</p>`;
-			e_outputList.appendChild(_li);
+			if (!_font.experimental) {
+				let _li = document.createElement("li");
+				_li.innerHTML = `<p> <b class="unselectable">${_font.fontName}:</b> ${_font.convert(userInput)}</p>`;
+				e_outputList.appendChild(_li);
+			}
 		}
 	}
 }
