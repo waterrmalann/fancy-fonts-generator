@@ -94,7 +94,19 @@ const randomTexts = [
 	"My friend drove his expensive car into a tree and found out how his Mercedes bends.", "Becoming a vegetarian is one big missed steak.",
 	"I was wondering why the ball was getting bigger. Then it hit me.", "Some aquatic mammals at the zoo escaped. It was otter chaos!",
 	"Never trust an atom, they make up everything!", "Waking up this morning was an eye-opening experience.",
-	"Long fairy tales have a tendency to dragon.", "What do you use to cut a Roman Emperor’s hair? Ceasers."
+	"Long fairy tales have a tendency to dragon.", "What do you use to cut a Roman Emperor’s hair? Ceasers.",
+	"The Middle Ages were called the Dark Ages because there were too many knights.", 
+	"My sister bet that I couldn’t build a car out of spaghetti. You should’ve seen her face when I drove pasta.", "I made a pun about the wind but it blows.",
+	"Never discuss infinity with a mathematician, they can go on about it forever.", "I knew a guy who collected candy canes, they were all in mint condition.",
+	"My wife tried to apply at the post office but they wouldn’t letter. They said only mails work here.", 
+	"My friend’s bakery burned down last night. Now his business is toast.", "Getting the ability to fly would be so uplifting.", 
+	"It's hard to explain puns to kleptomaniacs because they always take things literally.", 
+	"Two windmills are standing in a wind farm. One asks, “What’s your favorite kind of music?” The other says, “I’m a big metal fan.”",
+	"I can’t believe I got fired from the calendar factory. All I did was take a day off!", "England doesn't have a kidney bank, but it does have a Liverpool.", 
+	"What do you call the wife of a hippie? A Mississippi.", "A cross-eyed teacher couldn’t control his pupils.", "She had a photographic memory, but never developed it.",
+	"I wasn’t originally going to get a brain transplant, but then I changed my mind.", "There was a kidnapping at school yesterday. Don’t worry, though - he woke up!",
+	"What do you get when you mix alcohol and literature? Tequila mockingbird.", "What washes up on tiny beaches? Microwaves.", 
+	"I hate how funerals are always at 9 a.m. I’m not really a mourning person."
 ];
 
 var convertAll = false;  // whether to convert and display all available fonts or not.
