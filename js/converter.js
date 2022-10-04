@@ -285,3 +285,10 @@ function convertTextAll() {
 		}
 	}
 }
+
+// Set a randomly generated pastel color for the background.
+// just a cute little addition ^^
+var _hue = Math.floor(Math.random() * 360);
+_pastel = `hsl(${_hue}, 100%, 80%)`;
+document.body.style.backgroundColor = _pastel;
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  _pastel);
