@@ -21,15 +21,10 @@ A super-simple web app that you can use to generate cool, weird, and beautiful t
 #### Features
 
 - Real-time text to pseudofont conversion.
-- 27 unique fonts pre-defined. Easy to add more thanks to the simple system.
+- 50+ unique fonts pre-defined.
+- Simple syntax for adding custom fonts.
 - Can double as a pun generator. 😛
-- Ability to convert all available fonts at the same time.
-
-#### To-Do
-
-- More fonts.
-- Improve the UI and make it look better.
-- Make the psuedofont class more advanced to support custom symbols and replacements with more than 1 character. (eg: "V" to "\\/")
+- Ability to convert all loaded fonts at the same time.
 
 ## 🚀 Getting Started
 
@@ -40,15 +35,15 @@ A live version of the fonts generator is available [here](https://waterrmalann.g
 ### Hosting locally
 
 1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
-```
+```sh
 git clone https://github.com/waterrmalann/fancy-fonts-generator.git
 ```
 2. Install the dependencies.
-```
+```sh
 npm install
 ```
 3. This will start a live server. Head to the IP shown in the console.
-```
+```sh
 npm run serve
 ```
 
