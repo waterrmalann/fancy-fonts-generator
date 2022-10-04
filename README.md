@@ -2,6 +2,8 @@
 
 A super-simple web app that you can use to generate cool, weird, and beautiful text using pseudofonts made with Unicode characters. This is the GUI-based equivalent of the [Fancy Fonts Bot](https://github.com/waterrmalann/telegram-fancy-fonts-bot) for Telegram that I wrote not too long ago. They are both similar in terms of functionality and the font system is cross-compatible.
 
+![Screenshot](screenshot.png)
+
 **Note:** Text generated using this application may not always be readable, they could also cause accessibility issues as screen-readers might not recognize them. So it is advised that you use them knowing the downsides.*
 
 > 𝕿𝖍𝖎𝖘 𝖕𝖆𝖗𝖆𝖌𝖗𝖆𝖕𝖍 𝖔𝖋 𝖙𝖊𝖝𝖙 𝖜𝖆𝖘 𝖌𝖊𝖓𝖊𝖗𝖆𝖙𝖊𝖉 𝖚𝖘𝖎𝖓𝖌 𝖙𝖍𝖊 𝖜𝖊𝖇 𝖆𝖕𝖕.
