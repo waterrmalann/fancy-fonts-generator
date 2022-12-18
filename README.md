@@ -1,5 +1,9 @@
 # 💬 𝕱𝖆𝖓𝖈𝖞 𝕱𝖔𝖓𝖙𝖘 𝕲𝖊𝖓𝖊𝖗𝖆𝖙𝖔𝖗
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+## [Demo](https://waterrmalann.github.io/fancy-fonts-generator/)   |   [Source](https://github.com/waterrmalann/fancy-fonts-generator/blob/main/js/converter.js)
+
 A super-simple web app that you can use to generate cool, weird, and beautiful text using pseudofonts made with Unicode characters. This is the GUI-based equivalent of the [Fancy Fonts Bot](https://github.com/waterrmalann/telegram-fancy-fonts-bot) for Telegram that I wrote not too long ago. They are both similar in terms of functionality and the font system is cross-compatible.
 
 ![Screenshot](screenshot.jpg)
