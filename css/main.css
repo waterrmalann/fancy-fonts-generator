@@ -1,10 +1,26 @@
+:root {
+	--container-bgclr: #fff;
+	--container-clr: #212427;
+	--container-linkclr: #027dff;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--container-bgclr: #38383a;
+		--container-clr: #fff;
+		--container-linkclr: skyblue;
+	}
+	html {
+		color-scheme: dark light;
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
-
 body {
 	scroll-behavior: smooth;
-	background-color: #30D5C8;
+	background-color: #30D5C8;	
 	/*line-height: 1.6;*/
 	width: min(88%, 80.5rem);
 	margin-inline: auto;
@@ -12,6 +28,7 @@ body {
 
 a, a:hover, a:active, a:visited {
 	text-decoration:none;
+	color: var(--container-linkclr);
 }
 
 hr {
@@ -39,7 +56,8 @@ select {
 
 .main-container {
 	margin-top: 1.25rem;
-	background-color: white;
+	background-color: var(--container-bgclr);
+	color: var(--container-clr);
 	border-radius: 1rem;
 	padding-block: 0.75rem;
 	box-shadow: 2px 2px 5px #888888;
@@ -57,6 +75,7 @@ select {
 
 #accessibility-warning {
 	background-color: hsl(0, 0%, 98%);
+	color: black;
 	border-left:0.35rem solid gray;
 	padding:0.45rem;
 	border-radius: 0.5rem;
